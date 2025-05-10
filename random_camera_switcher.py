@@ -19,7 +19,7 @@ def script_properties():
 def switch_camera():
     global use_webcams
     source_type = "dshow_input" if use_webcams else "image_source"
-    source_names = ["Camera 1", "Camera 2", "Camera 3", "Camera 4"]
+    source_names = ["Camera 1", "Camera 2", "Camera 3"]
 
     current_scene = obs.obs_frontend_get_current_scene()
     if not current_scene:
